@@ -1,14 +1,13 @@
-// @flow
-import * as React from 'react';
+import {FC} from 'react';
 
-type Props = {
-
+type ChatProps = {
+    userName: string
 };
 
-export const Chat = (props: Props) => {
+export const Chat: FC<ChatProps> = ({userName}) => {
     return (
         <div>
-
+            chat {userName}
         </div>
     );
 };
